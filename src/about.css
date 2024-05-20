@@ -1,0 +1,140 @@
+body {
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  background-image: linear-gradient(to right, #fad0c4 0%, #ffd1ff 100%);
+}
+.container {
+  background: rgb(243, 234, 243);
+  border: 1px solid rgb(243, 234, 243);
+  border-radius: 15px;
+  padding: 15px 15px 0;
+}
+
+.user-icon {
+  font-size: 30px;
+}
+.notification-icon,
+.more-icon {
+  font-size: 22px;
+}
+.balance {
+  background-image: linear-gradient(
+    100deg,
+    #1f58dd,
+    #ec37a1,
+    rgb(245, 168, 25)
+  );
+  border: 1px solid #1f58dd, #ec37a1, rgb(245, 168, 25);
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+}
+.inc-exp-container {
+  margin: 20px;
+}
+.income,
+.expense {
+  border: 1px solid rgb(211, 207, 207);
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+.arrow-down {
+  background: rgb(243, 234, 243);
+  border-radius: 60px;
+  font-size: 25px;
+  padding: 3px;
+  color: green;
+}
+.arrow-up {
+  background: rgb(243, 234, 243);
+  border-radius: 60px;
+  font-size: 25px;
+  padding: 3px;
+  color: red;
+}
+.transactions a {
+  color: grey;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  background: white;
+}
+li span {
+  margin-left: 80%;
+}
+.widgets {
+  margin: 10px 10px 5px;
+  border: 1px solid whitesmoke;
+  border-radius: 28px;
+  background: whitesmoke;
+  padding: 10px;
+}
+.widgets .plus {
+  font-size: 30px;
+  border: 1px solid #ec37a1 30%, #1a52d6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: -27px;
+  color: white;
+  background-image: linear-gradient(#ec37a1 30%, #1a52d6);
+}
+.widgets .wallet,
+.widgets .home,
+.widgets .report,
+.widgets .bank {
+  font-size: 23px;
+  color: grey;
+}
+
+.expense-money {
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  padding: 18px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.category,
+.note,
+.date {
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px 20px;
+}
+button {
+  background-image: linear-gradient(
+    100deg,
+    #1f58dd,
+    #ec37a1,
+    rgb(245, 168, 25)
+  );
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 100px 20px 20px 20px;
+}
+hr {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-top: 4px solid black;
+}

@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  background: wheat;
+}
+
+h1 {
+  margin: 130px 30px;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
