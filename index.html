@@ -15,13 +15,15 @@
     ></script>
 
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-1 mt-2">
-          <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+          <span class="user-icon"
+            ><i class="fa-solid fa-user" title="User"></i
+          ></span>
         </div>
         <div class="col-3 mt-2">
           <p>
@@ -31,17 +33,17 @@
         </div>
 
         <div class="col-8 text-end mt-3">
-          <span class="notification-icon me-4"
+          <span class="notification-icon me-4" title="Notifications"
             ><i class="fa-regular fa-bell"></i
           ></span>
-          <a href="#" class="more-icon"
+          <a href="#" class="more-icon" title="More"
             ><i class="fa-solid fa-ellipsis-vertical"></i
           ></a>
         </div>
       </div>
 
-      <div class="balance text-center pb-2">
-        <h6 class="pt-3 fs-4" id="wallet">Total Balance</h6>
+      <div class="balance text-center pb-2 mt-2 mb-2">
+        <h6 class="pt-3 fs-5" id="wallet">Total Balance</h6>
         <p class="money fs-2 fw-bold" id="balance">$0.00</p>
       </div>
 
@@ -51,7 +53,9 @@
 
           <p>
             Income<br />
-            <span class="fw-medium fs-5" id="money-plus">+$0.00</span>
+            <span class="fw-medium fs-4 text-success" id="money-plus"
+              >+$0.00</span
+            >
           </p>
         </div>
 
@@ -59,7 +63,9 @@
           <span class="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
           <p>
             Expenses <br />
-            <span class="fw-medium fs-5" id="money-minus">-$0.00</span>
+            <span class="fw-medium fs-4 text-danger" id="money-minus"
+              >-$0.00</span
+            >
           </p>
         </div>
       </div>
@@ -113,6 +119,6 @@
         ></a>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>

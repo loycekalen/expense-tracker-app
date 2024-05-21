@@ -1,0 +1,133 @@
+header {
+  background-image: url("../images/money.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+.header-container {
+  padding: 300px;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-style: oblique;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: whitesmoke;
+}
+img {
+  margin-left: 8%;
+}
+.navbar .container-fluid .collapse .navbar-nav a:hover {
+  color: rgb(207, 19, 176);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.features:hover {
+  color: black;
+}
+.launch:hover {
+  color: black;
+}
+h2 {
+  margin-top: 50px;
+  font-size: 45px;
+}
+li {
+  list-style: none;
+}
+.first-icon {
+  font-size: 60px;
+  color: rgb(236, 85, 236);
+}
+.second-icon {
+  font-size: 60px;
+  color: peru;
+}
+.third-icon {
+  font-size: 60px;
+  color: #0ba360;
+}
+.fourth-icon {
+  font-size: 60px;
+  color: gold;
+}
+.container li {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.container p.paragraph {
+  font-size: 14px;
+  opacity: 0.6;
+}
+section {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  padding: 30px;
+  color: whitesmoke;
+}
+section h3 {
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 60px;
+}
+section .one p {
+  font-size: 50px;
+}
+section .two {
+  font-size: 14px;
+  color: grey;
+}
+section li {
+  margin: 30px;
+}
+section strong.one {
+  border: 5px solid thistle;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+}
+section strong.two {
+  border: 5px solid turquoise;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+}
+section strong.three {
+  border: 5px solid teal;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+}
+section strong.four {
+  border: 5px solid gold;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+}
+footer a {
+  color: palevioletred;
+}
+footer a :hover {
+  font-size: 40px;
+  color: yellow;
+}
+@media (max-width: 850px) {
+  section div.row {
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  ul {
+    display: none;
+  }
+}
