@@ -1,5 +1,5 @@
 body {
-  max-width: 500px;
+  max-width: 600px;
   display: block;
   margin: 20px auto;
   background-image: linear-gradient(to right, #fad0c4 0%, #ffd1ff 100%);
@@ -56,9 +56,7 @@ body {
   padding: 3px;
   color: red;
 }
-.transactions a {
-  color: grey;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -67,12 +65,16 @@ li {
   list-style: none;
   border: 1px solid white;
   padding: 10px;
+  font-size: 25px;
+
+  text-transform: capitalize;
+  font-weight: 500;
   border-radius: 15px;
   margin: 10px 0;
   background: white;
 }
 li span {
-  margin-left: 80%;
+  margin-left: 60%;
 }
 .widgets {
   margin: 10px 10px 5px;
@@ -100,23 +102,13 @@ li span {
   font-size: 23px;
   color: grey;
 }
-
-.expense-money {
-  border: 1px solid whitesmoke;
-  border-radius: 30px;
-  padding: 18px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
+p {
+  font-size: 20px;
 }
-.category,
-.note,
-.date {
-  padding: 10px;
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-  width: 90%;
-  margin: 10px 20px;
+
+.form-control {
+  text-align: center;
+  font-size: 22px;
 }
 button {
   background-image: linear-gradient(
@@ -127,14 +119,12 @@ button {
   );
   width: 90%;
   border: none;
+  font-size: 28px;
   border-radius: 10px;
   padding: 10px;
   margin: 100px 20px 20px 20px;
+  color: white;
 }
-hr {
-  width: 40%;
-  display: block;
-  margin: 0 auto;
-  border: none;
-  border-top: 4px solid black;
+button:hover {
+  color: black;
 }
