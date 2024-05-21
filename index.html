@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="an expense tracker is a software or application that helps to keep an accurate record of your money inflow and outflow."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -10,115 +14,155 @@
       crossorigin="anonymous"
     />
     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/75f32e9ed7.js"
       crossorigin="anonymous"
     ></script>
-
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/main.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="images/piggy.png" alt="Piggy Bank" width="100" />
+        <a class="navbar-brand text-info-emphasis fs-3 fw-lighter" href="#">
+          Expense Tracker</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active me-5" aria-current="page" href="#"
+              >Privacy & Cookies Policy</a
+            >
+            <a class="nav-link active me-5" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <span class="header-container">
+        <h1>MONEY MANAGEMENT MADE EASIER</h1>
+
+        <span class="buttons">
+          <a href="#features" class="features btn btn-danger p-4">FEATURES</a>
+          <a href="main.html" class="launch btn btn-success p-4"
+            >LAUNCH DEMO APP</a
+          >
+        </span>
+      </span>
+    </header>
     <div class="container">
-      <div class="row">
-        <div class="col-1 mt-2">
-          <span class="user-icon"
-            ><i class="fa-solid fa-user" title="User"></i
-          ></span>
-        </div>
-        <div class="col-3 mt-2">
-          <p>
-            Welcome! <br />
-            <strong>Jane Doe</strong>
+      <h2 id="features" class="text-center">FEATURES</h2>
+      <p class="text-center">
+        Organize your incomes, manage your family budget, keep track of expenses
+        while traveling and understand where all your money are with some great,
+        yet simple features.
+      </p>
+
+      <div class="row mb-4">
+        <div class="col-sm-6">
+          <a href="" class="first-icon"><i class="fa-solid fa-sliders"></i></a>
+          <h5>INTUITIVE & CLEAN</h5>
+          <p class="paragraph">
+            Intuitive, clean and simple way of adding daily expenses and
+            incomes. main screen calendar that gives a quick monthly overview
+            over all transactions
           </p>
         </div>
 
-        <div class="col-8 text-end mt-3">
-          <span class="notification-icon me-4" title="Notifications"
-            ><i class="fa-regular fa-bell"></i
-          ></span>
-          <a href="#" class="more-icon" title="More"
-            ><i class="fa-solid fa-ellipsis-vertical"></i
+        <div class="col-sm-6">
+          <a href="" class="second-icon"
+            ><i class="fa-solid fa-file-shield"></i
           ></a>
-        </div>
-      </div>
-
-      <div class="balance text-center pb-2 mt-2 mb-2">
-        <h6 class="pt-3 fs-5" id="wallet">Total Balance</h6>
-        <p class="money fs-2 fw-bold" id="balance">$0.00</p>
-      </div>
-
-      <div class="row inc-exp-container">
-        <div class="col income">
-          <span class="arrow-down"><i class="fa-solid fa-arrow-down"></i></span>
-
-          <p>
-            Income<br />
-            <span class="fw-medium fs-4 text-success" id="money-plus"
-              >+$0.00</span
-            >
+          <h5>SECURE</h5>
+          <p class="paragraph">
+            Your data is always safe wherever your are and what ever device you
+            are using.
           </p>
         </div>
 
-        <div class="col expense">
-          <span class="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
-          <p>
-            Expenses <br />
-            <span class="fw-medium fs-4 text-danger" id="money-minus"
-              >-$0.00</span
-            >
+        <div class="col-sm-6">
+          <a href="" class="third-icon"
+            ><i class="fa-brands fa-squarespace"></i
+          ></a>
+          <h5>COMPREHENSIVE</h5>
+          <p class="paragraph">
+            A compact yet comprehensive list of expense and income categories.
+            Add or edit categories, if defaults don’t work for you
           </p>
         </div>
-      </div>
 
-      <h5 class="text-center text-danger-emphasis">Transactions</h5>
-      <ul id="list"></ul>
-
-      <hr />
-      <h3 id="add-transaction">Add transaction</h3>
-      <form id="form">
-        <div class="form-control mb-3">
-          <label for="text"><strong>Text</strong></label> <br />
-          <input
-            type="text"
-            id="text"
-            placeholder="Enter text..."
-            class="mb-2 mt-2"
-          />
+        <div class="col-sm-6">
+          <a href="" class="fourth-icon"><i class="fa-solid fa-gear"></i></a>
+          <h5>RELIABLE & USEFUL</h5>
+          <p class="paragraph">
+            Set reminders for future inflow or outflow transactions and
+            recurrent payments – never miss another deadline
+          </p>
         </div>
-        <div class="form-control">
-          <label for="amount"
-            ><strong>Amount</strong><br />
-            <strong class="text-danger">(negative - expense</strong>,
-            <strong class="text-success">positive - income)</strong>
-          </label>
-          <br />
-          <input
-            type="number"
-            id="amount"
-            placeholder="Enter amount..."
-            class="mb-2 mt-2"
-          />
-        </div>
-        <button><a href="index.html"></a>SAVE TRANSACTION</button>
-      </form>
-      <div class="widgets d-flex justify-content-between">
-        <a href="#wallet" class="wallet" title="My Wallet"
-          ><i class="fa-solid fa-wallet"></i
-        ></a>
-        <a href="report.html" class="report" title="See Report"
-          ><i class="fa-solid fa-chart-pie"></i
-        ></a>
-        <a href="#add-transaction" class="plus" title="Add Expense"
-          ><i class="fa-solid fa-plus"></i
-        ></a>
-        <a href="report.html" class="bank" title="Bank Accounts"
-          ><i class="fa-solid fa-money-check-dollar"></i
-        ></a>
-        <a href="main.html" class="home" title="Home"
-          ><i class="fa-solid fa-house"></i
-        ></a>
       </div>
     </div>
-    <script src="src/script.js"></script>
+
+    <section>
+      <h3 class="text-center">ABOUT</h3>
+      <p class="text-center fs-5">
+        This expense tracker application is dedicated in helping you manage your
+        financial life.
+      </p>
+      <div class="row mt-5">
+        <div class="col one">
+          <p>Very simple, intuitive and straight forward</p>
+        </div>
+        <div class="col two">
+          If you are looking for a complicated money management application that
+          promises you to do everything you ever wanted, then you have to keep
+          looking because this app is not for you. This expense tracker &
+          manager promises to be a very simple, intuitive and straight forward
+          mobile application that helps and assists you to track all your
+          expenses, manage your budgets/costs and organize your spending,
+          enabling you to make savings and order in your financial life.
+          Dedicated in helping you manage your financial life, easily,
+          efficiently and with no complications.
+        </div>
+        <div class="col three">
+          <ul>
+            <li><strong class="one">100 </strong>EASY TO USE</li>
+            <li><strong class="two">100 </strong>COMPREHENSIVE</li>
+            <li><strong class="three">100 </strong>SAFE AND SECURE</li>
+            <li>
+              <strong class="four">100 </strong>YOUR BESTIE
+              <span><i class="fa-regular fa-face-grin-wink"></i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="icons d-flex justify-content-center mt-4" id="contact">
+        <a href="#" class="me-5 fs-2"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="fs-2"><i class="fa-brands fa-facebook"></i></a>
+        <a
+          href="https://github.com/loycekalen/expense-tracker-app"
+          class="ms-5 fs-2"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </footer>
+    </section>
   </body>
 </html>
